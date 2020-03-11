@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V5</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Contact Us
+				</span>
+
+
+				<div class="wrap-input100 validate-input bg1" data-validate="Puissance installée">
+					<span class="label-input100">Entrez la puissance installée (kWh/an)</span>
+					<input id="1" class="input100" type="text" name="name" placeholder="Puissance installée">
+				</div>
+				<div class="wrap-input100 bg1 rs1-wrap-input100" data-validate="Consommation propre">
+					<span class="label-input100">Consommation propre l'année précedente (%)</span>
+					<input id="2" class="input100" type="text" name="phone" placeholder="Consommation propre">
+				</div>
+				<div class="wrap-input100 bg1 rs1-wrap-input100" data-validate="Taux d'intérêt">
+					<span class="label-input100">Taux d'intérêt de référence actuel (%)</span>
+					<input id="3" class="input100" type="text" name="phone" placeholder="Taux d'intérêt">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100" data-validate="Prix retribution">
+					<span class="label-input100">Prix rétribution pour l'électricité réinjectée sur le réseau (ct./kWh)</span>
+					<input id="4" class="input100" type="text" name="phone" placeholder="Prix retribution">
+				</div>
+				<div class="wrap-input100 bg1 rs1-wrap-input100" data-validate="Coûts du produit électrique">
+					<span class="label-input100">Coûts du produit électrique acheté à l'extérieur (ct./kWh)</span>
+					<input id="5" class="input100" type="text" name="phone" placeholder="Coûts du produit électrique">
+				</div>
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Temps d'installation</span>
+					<div>
+						<select id="6" class="js-select2" name="service">
+							<option>Selectionner l'age de votre installation</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+
+				<div class="w-full dis-none js-show-service">
+					<!-- <div class="wrap-input100 validate-input bg1" data-validate="Consomation annuelle">
+						<span class="label-input100">Consomation annuelle d'électricité de l'immeuble (kWh/an)</span>
+						<input id="7" class="input100" type="text" name="name" placeholder="Consomation annuelle">
+					</div>
+					<div class="wrap-input100 validate-input bg1 " data-validate="Coût annuels de mesure">
+						<span class="label-input100">Coût annuels de mesure, de décompte et d'administration (Fr/an)</span>
+						<input id="8" class="input100 js-select3" type="text" name="name" placeholder="Coût annuels de mesure">
+					</div> -->
+					<div class="wrap-input100 validate-input bg1 " data-validate="Coût installation brut">
+						<span class="label-input100">Coût installation (Fr)</span>
+						<input id="9" class="input100 js-select3" type="text" name="name"  placeholder="Coût installation brut">
+					</div>
+					<div class="wrap-input100 validate-input bg1 " data-validate="Rétribution unique">
+						<span class="label-input100">Rétribution unique (Fr)</span>
+						<input id="10" class="input100 js-select3" type="text" name="name" oninput="openup()" placeholder="Rétribution unique">
+					</div>
+
+					<!-- <div class="wrap-contact100-form-range">
+						<span class="label-input100">Budget *</span>
+
+						<div class="contact100-form-range-value">
+							$<span id="value-lower">610</span> - $<span id="value-upper">980</span>
+							<input type="text" name="from-value">
+							<input type="text" name="to-value">
+						</div>
+
+						<div class="contact100-form-range-bar">
+							<div id="filter-bar"></div>
+						</div>
+					</div> -->
+
+					<div  class="w-full dis-none js-show-service2">
+						<div id="11" style="text-align: center; font-size: 20px">
+						test
+					</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+
+			$(".js-select2").each(function(){
+				$(this).on('select2:close', function (e){
+					if($(this).val() == "Please chooses") {
+						$('.js-show-service').slideUp();
+					}
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
+					}
+				});
+			});
+		})
+	</script>
+	<script>
+			function openup(){
+				$('.js-show-service2').slideDown();
+				var puissanc = parseFloat($("#1").val());
+				var conso_pr = parseFloat($("#2").val());
+				var taux_int = parseFloat($("#3").val());
+				var reinj_pr = parseFloat($("#4").val());
+				var cout_ele = parseFloat($("#5").val());
+				var temps_in = parseFloat($("#6").val());
+				var conso_an = parseFloat($("#7").val());
+				var cout_anu = parseFloat($("#8").val());
+
+				var j18 = puissanc / 100 * conso_pr;
+				var j23 = (taux_int + 0.5) / 100;
+				var g68 = conso_an / cout_anu;
+				var recette = ((puissanc - j18) * reinj_pr) / 100
+				var cout = ($("#9").val() - $("#10").val()) *(Math.pow((1+j23),25)*j23/(Math.pow((1+j23),25)-1));
+				var cout_ann = cout + 0.03 * puissanc - recette;
+				var prix_kWh = (cout_ann*100/(j18)).toFixed(2);;
+				$('#11')[0].innerText = "Prix pour " + j18 + "kWh : " + prix_kWh + " ct./kWh"
+			}
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/noui/nouislider.min.js"></script>
+	<script>
+	    // var filterBar = document.getElementById('filter-bar');
+			//
+	    // noUiSlider.create(filterBar, {
+	    //     start: [ 1500, 3900 ],
+	    //     connect: true,
+	    //     range: {
+	    //         'min': 1500,
+	    //         'max': 7500
+	    //     }
+	    // });
+			//
+	    // var skipValues = [
+	    // document.getElementById('value-lower'),
+	    // document.getElementById('value-upper')
+	    // ];
+			//
+	    // filterBar.noUiSlider.on('update', function( values, handle ) {
+	    //     skipValues[handle].innerHTML = Math.round(values[handle]);
+	    //     $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+	    //     $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
+	    // });
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
